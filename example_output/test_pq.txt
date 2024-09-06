@@ -1,0 +1,54 @@
+#
+# Note that the specific values printed by your program might be different
+# than the ones printed here, since the testing program generates random
+# numbers to test the PQ.  The main things you should look for in the output
+# of your program are:
+#   * "first", "removed", and "priority" should always match "expected"
+#   * each subsequent value removed from your PQ should always be the lowest
+#     remaining one (i.e. values within each set of removals in the test
+#     program should be printed in ascending order)
+#
+
+$ ./test_pq
+== Inserting some values into PQ
+
+== Removing some from PQ: first / removed / priority (expected)
+  -    1 /    1 /    1 (   1)
+  -    1 /    1 /    1 (   1)
+  -    2 /    2 /    2 (   2)
+  -   14 /   14 /   14 (  14)
+  -   14 /   14 /   14 (  14)
+  -   25 /   25 /   25 (  25)
+  -   26 /   26 /   26 (  26)
+  -   26 /   26 /   26 (  26)
+
+== Inserting more values into PQ
+
+== Removing remaining from PQ: first / removed / priority (expected)
+  -    2 /    2 /    2 (   2)
+  -    3 /    3 /    3 (   3)
+  -    4 /    4 /    4 (   4)
+  -   10 /   10 /   10 (  10)
+  -   10 /   10 /   10 (  10)
+  -   19 /   19 /   19 (  19)
+  -   21 /   21 /   21 (  21)
+  -   28 /   28 /   28 (  28)
+  -   29 /   29 /   29 (  29)
+  -   31 /   31 /   31 (  31)
+  -   32 /   32 /   32 (  32)
+  -   32 /   32 /   32 (  32)
+  -   33 /   33 /   33 (  33)
+  -   38 /   38 /   38 (  38)
+  -   41 /   41 /   41 (  41)
+  -   43 /   43 /   43 (  43)
+  -   44 /   44 /   44 (  44)
+  -   45 /   45 /   45 (  45)
+  -   47 /   47 /   47 (  47)
+  -   52 /   52 /   52 (  52)
+  -   53 /   53 /   53 (  53)
+  -   59 /   59 /   59 (  59)
+  -   59 /   59 /   59 (  59)
+  -   62 /   62 /   62 (  62)
+
+== Is PQ empty (expect 1)? 1
+== Did we see all values we expected (expect 1)? 1
