@@ -1,13 +1,3 @@
-# Assignment 4
-**Due by 11:59pm on Monday, 11/29/2021**<br/>
-**Demo due by 11:59pm on Friday 12/10/2021**
-
-In this assignment, you will implement a binary heap-based priority queue (PQ).  The requirements for the assignment are described below.
-
-For this assignment, you are provided with some starter code that defines the structures you'll be working with and prototypes the functions you'll be writing and also provides some data structures upon which to build a PQ implementation.  It's important that you don't modify the function prototypes specified in `pq.h`. To help grade your assignment, we will use a set of tests that assume these functions exist and have the same prototypes that are defined in those files. If you change the prototypes, it will cause the tests to break, and your grade for the assignment will likely suffer.
-
-Feel free to add any additional functions you might need to `pq.c`.
-
 ## Implement a heap-based priority queue
 
 Your task for this assignment is to implement a [priority queue](https://en.wikipedia.org/wiki/Priority_queue) (PQ).  A PQ is a structure that orders data elements based on assigned priority values.  Specifically, elements can be inserted into a PQ in any order, but when removing an element from a PQ, the highest-priority element is always removed first.
@@ -122,24 +112,3 @@ Example output of the testing program using a correct PQ implementation is provi
 
 In order to verify that your memory freeing functions work correctly, it will be helpful to run the testing application through `valgrind`.
 
-## Submission
-
-As always, we'll be using GitHub Classroom for this assignment, and you will submit your assignment via GitHub. Just make sure your completed files are committed and pushed by the assignment's deadline to the master branch of the GitHub repo that was created for you by GitHub Classroom for this assignment. A good way to check whether your files are safely submitted is to look at the master branch of your assignment repo on the github.com website (i.e. https://github.com/osu-cs261-f21/assignment-4-YourGitHubUsername/). If your changes show up there, you can consider your files submitted.
-
-## Grading criteria
-
-To grade your work, the TAs will use the tests in both `test_pq.c`.  Your programs **MUST** compile and run on `access.engr.oregonstate.edu` (or `flip`), so make sure you have tested your work there before you make your final submission, since a program that compiles and runs in one environment may not compile and run in another.  **Assignments that do not compile on `access` or `flip` will receive a grade of 0.**  If you do not have an ENGR account, you can create one at https://teach.engr.oregonstate.edu/.
-
-The assignment is worth 100 total points, broken down as follows:
-
-* 90 points: Correctly implements a priority queue based on a minimizing binary heap
-  * 5 points: `struct pq` defines a heap-based priority queue
-  * 5 points: `pq_create()` correctly allocates and initializes a heap-based priority queue
-  * 5 points: `pq_free()` correctly frees all memory associated with a priority queue (no memory leaks!)
-  * 5 points: `pq_isempty()` correctly determines whether a priority queue contains any elements or not
-  * 10 points: `pq_first()` correctly returns the first value in a priority queue in O(1) runtime complexity
-  * 10 points: `pq_first_priority()` correctly returns priority value associated with the first element in a priority queue in O(1) runtime complexity
-  * 25 points: `pq_insert()` correctly inserts a value into a priority queue with the specified priority and restores the heap property as needed in O(log n) runtime complexity
-  * 25 points: `pq_remove_first()` correctly removes first element element from a priority queue and returns its value, restoring the heap property as needed in O(log n) runtime complexity
-
-* 10 points: Correctly implements an application that uses Dijkstra's algorithm to find the least-cost paths in the graph defined in `airports.dat`, as described above
